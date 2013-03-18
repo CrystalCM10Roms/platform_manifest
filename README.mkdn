@@ -1,49 +1,30 @@
-JBMiniProject
-=============
-JBMiniProject is a project started by me and willing to bring Jelly Bean to Xperia 2010 Devices!
+Crystal CyanogenMod10 for Shakira
+=================================
+CrystalCM10
+===========
 
-All patches are welcome!
+!! For use this surouces you must have my premissions !!
+!! You can write to me about this on XDA !!
 
-Please use github or email minicmrom@gmail.com for any patches you want to contibute.
+1 :
+---
 
-Supported Devices:
-------------------
-   -Xperia X10 Mini
+mkdir CrystalCM10Roms
 
-   -Xperia X10 Mini Pro
+cd CrystalCM10Roms
 
-   -Xperia X8
+repo init -u git://github.com/CrystalCM10Roms/platform_manifest.git -b jellybean
 
-   -Samsung Galaxy Gio
+repo sync -j16
 
-Getting Started
----------------
+2 :
+---
 
-To get started with Android for JBMiniProject, you'll need to get familiar with [Git and Repo](http://source.android.com/download/using-repo).
+. build/envsetup.sh && lunch 4
 
-To initialize your local repository using the JBMiniProject trees, use a command like this:
+make -j16 bacon
 
-    repo init -u git://github.com/JBMiniProject/platform_manifest.git -b jellybean
+3 :
+---
 
-Then to sync up:
-
-    repo sync
-
-Building JBMiniProject
-----------------------
-
-    . build/envsetup.sh
-    brunch DEVICENAME (for ex: brunch jbmp_shakira)
-    or simply
-    brunch (then choose from list)
-
-Devices:
-
-    shakira (X8/W8)
-    robyn (X10mini)
-    mimmi (X10minipro)
-
-
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.com/) for building instructions.
-
-
+Have fun on building :D
